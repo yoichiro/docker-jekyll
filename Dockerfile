@@ -26,7 +26,7 @@ RUN curl -L git.io/nodebrew | perl - setup && \
     /bin/bash -c 'echo "export PATH=\$HOME/.rbenv/bin:\$PATH" >> $HOME/.bashrc' && \
     /bin/bash -c 'echo "eval \"\$(rbenv init -)\"" >> $HOME/.bashrc' && \
     /home/$USERNAME/.rbenv/shims/gem install jekyll -v "3.8.6" && \
-    /home/$USERNAME/.rbenv/shims/gem jekyll-archives jekyll-paginate && \
+    /home/$USERNAME/.rbenv/shims/gem install jekyll-archives jekyll-paginate && \
     /bin/bash -c 'echo "export LANG=ja_JP.UTF-8" >> $HOME/.bashrc'
 
 # Prepare working directory
